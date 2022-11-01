@@ -15,7 +15,7 @@ export default function EditTask() {
         <form className='form-logout'>
           <h1>Logout efetuado com sucesso!</h1>
           <label htmlFor='description' className='form-label label-user1'>
-            Retornar a pagina de login. 
+            Retornar a pagina de login.
             <button
             id='btn-register'
             type='button'
