@@ -119,8 +119,8 @@ export default function Tasks() {
                   <td> {e.description}</td>
                   <td> {e.status}</td>
                   <td> {moment(e.createdAt).locale('pt-br').format('DD/MM/YYYY')}</td>
-                  <td><BiEdit onClick={ () => editTask(e.id) }/></td>
-                  <td>< MdDeleteForever onClick={ () => deleteTask(e.id) }/></td>
+                  <td><BiEdit size={'1em'} onClick={ () => editTask(e.id) }/></td>
+                  <td>< MdDeleteForever size={'1em'} onClick={ () => deleteTask(e.id) }/></td>
                   <td></td>
                   <td></td>
                   <td></td>

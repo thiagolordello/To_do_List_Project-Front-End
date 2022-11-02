@@ -41,12 +41,12 @@
   .imagem1 {
     align-items: center;
     display: flex;
-    height: 50vh;
+    height: 367px;
     margin-left: 12%;
     margin-right: 2%;
     margin-top: 07%;
     /*justify-content: center;*/
-    width: 25vw;
+    width: 22vw;
     background-image: url("../image/Humaaans - Sitting.png");
   }
 
@@ -73,6 +73,10 @@
     width: 25vw;
     /*background-image: url("../image/Humaaans - 3 Characters.png");*/
   }
+
+  .selectStyle {
+    align-content: flex-start;
+  }
   
   .form-login2, .form-register2 {
     align-content: center;
@@ -84,14 +88,14 @@
     font-weight: 300;
     height: 420px;
     padding: 35px;
-    text-align: center;
+    text-align: left;
     width: 450px;
   }
   
   .form-register2 {
     height: 350px;
     padding: 50px;
-    width: 300px;
+    width: 320px;
   }
   
   .form-login2 h1, .form-register2 h1 {
@@ -139,11 +143,23 @@
     margin-left: 2%;
   }
 
+  .tituloSty {
+    text-align: center;
+  }
+
+  .selectStyle {
+    margin-left: 12%;
+    padding-right: 33%;
+    height: 25px;
+  }
+  
   .label-user2 {
     color: rgb(99, 40, 40, 0.863);
     font-weight:bold;
-    margin-left: 2%;
+    padding-top: 2%;
   }
+
+
   
   .notHaveAccount2 {
     background-color: rgba(99, 40, 40, 0.863);

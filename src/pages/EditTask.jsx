@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useState, useRef, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import '../style/register.css';
+import '../style/edit_task.css';
 export default function EditTask() {
   const [inptDescpt,setInptDescpt] = useState('');
 
@@ -71,7 +71,7 @@ export default function EditTask() {
         <div className='imagemFake'></div>
         <form className='form-register2'>
           <h1>Editar Tarefa</h1>
-          <label htmlFor='description' className='form-label label-user1'>
+          <label htmlFor='description' className='label-user1'>
             Descrição
             <input
               name='description'
@@ -80,14 +80,14 @@ export default function EditTask() {
               ref={ref}
               value={inptDescpt}
               onChange={ (e) => { setInptDescpt(e.target.value); } }
-              className='form-control input-usr-name'
+              className='form-control input-usr-name3'
             />
           </label>
-          <label htmlFor='password' className='form-label label-user2'>
+          <label htmlFor='password' className='form-label label-status'>
             Status
               <select
               onChange={ ({ target }) =>  setStat(target.value) } 
-              className=""
+              className="input-usr-name2 "
               value={stat}
             >
               <option value="Pendente">Pendente</option>

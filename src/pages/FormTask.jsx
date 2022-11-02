@@ -62,8 +62,8 @@ export default function Register() {
         {console.log(stat)}
         <div className='imagem2'></div>
         <form className='form-register2'>
-          <h1>Nova Tarefa</h1>
-          <label htmlFor='description' className='form-label label-user1'>
+          <h1 className='tituloSty'>Nova Tarefa</h1>
+          <label htmlFor='description' className='label-user1'>
             Descrição
             <input
               name='description'
@@ -74,17 +74,18 @@ export default function Register() {
               className='form-control input-usr-name'
             />
           </label>
-          <label htmlFor='password' className='form-label label-user2'>
+          <label htmlFor='password' className='label-user2'>
             Status
             {/*<input
               name='password'
               type='password'
               id='password'
               onChange={ (e) => { setStat(e.target.value); } }
-              className='form-control input-usr-passwd' 
-    />*/}   <select
+              className='form-control input-usr-passwd'
+    />*/}   
+            <select
               onChange={ ({ target }) =>  setStat(target.value) } 
-              className=""
+              className="selectStyle"
             >
               <option value="Pendente">Pendente</option>
               <option value="Concluido">Concluído</option>

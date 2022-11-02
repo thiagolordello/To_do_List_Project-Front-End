@@ -18,7 +18,10 @@
   padding-left: 30px;
 }
 
-
+.btn-edit {
+  width: 60%;
+  height: 60%;
+}
 
 .background-alltasks {
     background-image: url("../image/notebook-background-.jpg");
