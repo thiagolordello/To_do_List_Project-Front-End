@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import { useNavigate, Link } from'react-router-dom';
+import { useNavigate } from'react-router-dom';
 import todolistContext from '../context/to-do-list-Context';
 /*import todolistContext from '../context/to-do-list-Context';*/
 import axios from 'axios';
@@ -16,8 +16,8 @@ export default function Tasks() {
   // const navigate = useNavigate();
   // const { idUser, setIdUser } = useContext(todolistContext); 
   const [allTasks, setAllTasks] = useState([]);
-  const [logout,setLogout] = useState(false);
-  const { idUser, setIdUser } = useContext(todolistContext);
+  const [logout] = useState(false);
+  const { setIdUser } = useContext(todolistContext);
   const navigate = useNavigate();
   
   // console.log(idUser);

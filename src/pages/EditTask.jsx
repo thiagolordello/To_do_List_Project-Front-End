@@ -13,7 +13,7 @@ export default function EditTask() {
 
   useEffect(() => {
     getOneTaskById();
-  }, []);
+  }, [getOneTaskById]);
   const getOneTaskById = async () => {
     try {
       const data = JSON.parse(localStorage.getItem('name'));
